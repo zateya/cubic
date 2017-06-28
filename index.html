@@ -2,101 +2,7 @@
 <html>
   <head>
     <title>Cubic</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      
-      .wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        width: 100%;
-        height: 100vh;
-        background-color: #498fcb;
-        overflow: hidden;
-      }
-      
-      .cubic {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        position: relative;
-        width: 175px;
-        height: 175px;
-        margin: auto;
-        z-index: 1;
-      }
-      
-      .cubic::after {
-        content: "";
-        display: block;
-        position: absolute;
-        right: 5px;
-        top: 2px;
-        width: 237px;
-        height: 100vh;
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(17,29,36, 0.55)), to(rgba(17,29,36, 0.1)));
-        background: linear-gradient(to bottom, rgba(17,29,36, 0.55), rgba(17,29,36, 0.1));
-        z-index: -1;
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        -webkit-transform-origin: top right;
-                transform-origin: top right;
-      }
-      
-      .cubic__item {
-        width: 50px;
-        height: 50px;
-        border: 6px solid #000;
-        border-radius: 10px;
-        margin-top: -6px;
-      }
-      
-      .cubic__item:nth-child(1),
-      .cubic__item:nth-child(2),
-      .cubic__item:nth-child(3) {
-        margin-top: 0;
-      }
-      
-      .cubic__item:not(:nth-child(3n + 1)) {
-        margin-left: -6px;
-      }
-      
-      .cubic__item:nth-child(n + 4) {
-        margin-top: -6px;
-      }
-      
-      .cubic__item--blue {
-        background-color: #126db6;
-      }
-      
-      .cubic__item--yellow {
-        background-color: #f4ea28;
-      }
-      
-      .cubic__item--red {
-        background-color: #d31e47;
-      }
-      
-      .cubic__item--orange {
-        background-color: #f7923a;
-      }
-      
-      .cubic__item--white {
-        background-color: #ffffff;
-      }
-      
-      .cubic__item--green {
-        background-color: #039d6b;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <div class="wrapper">
@@ -104,11 +10,11 @@
         <div class="cubic__item  cubic__item--blue"></div>
         <div class="cubic__item  cubic__item--yellow"></div>
         <div class="cubic__item  cubic__item--red"></div>
-        
+
         <div class="cubic__item  cubic__item--orange"></div>
         <div class="cubic__item  cubic__item--white"></div>
         <div class="cubic__item  cubic__item--yellow"></div>
-        
+
         <div class="cubic__item  cubic__item--green"></div>
         <div class="cubic__item  cubic__item--red"></div>
         <div class="cubic__item  cubic__item--blue"></div>
