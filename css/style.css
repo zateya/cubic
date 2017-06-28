@@ -26,6 +26,7 @@ body {
   width: 175px;
   height: 175px;
   margin: auto;
+  z-index: 0;
 }
 
 .cubic::after {
